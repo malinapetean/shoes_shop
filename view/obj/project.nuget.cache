@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DzbMV6kxQ9XjZRT3XHWO5MtoTbCq7hQlQGFui2ThIbVgoj/pMaRPCdZ3ElcoSqcV9I1Ujn+v8OLmM0P79jy+lg==",
+  "dgSpecHash": "Qh3wsGDAOJ/B6tYCmu2qC5XXHGJeN+lDhAZ/8hVQzu1yTkTmcnS1eNyIU5z8muzMPdH5XF9sxidV9JMJ22fJ0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ica\\source\\repos\\shoes_shop\\view\\view.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ica\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512"
+  ],
   "logs": []
 }

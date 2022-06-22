@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "view/1.0.0": {
+        "dependencies": {
+          "FontAwesome.Sharp": "5.15.4"
+        },
+        "runtime": {
+          "view.dll": {}
+        }
+      },
       "FontAwesome.Sharp/5.15.4": {
         "runtime": {
           "lib/netcoreapp3.1/FontAwesome.Sharp.dll": {
@@ -17,6 +25,11 @@
     }
   },
   "libraries": {
+    "view/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "FontAwesome.Sharp/5.15.4": {
       "type": "package",
       "serviceable": true,

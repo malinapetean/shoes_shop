@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace view
 {
-    public partial class Form1 : Form
+    public partial class FrmMkLayout : Form
     {
-        public Form1()
+        public FrmMkLayout()
         {
             InitializeComponent();
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
