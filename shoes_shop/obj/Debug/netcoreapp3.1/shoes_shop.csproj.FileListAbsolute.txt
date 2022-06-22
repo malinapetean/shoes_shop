@@ -1,0 +1,14 @@
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.exe
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.deps.json
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.runtimeconfig.json
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.runtimeconfig.dev.json
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.dll
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\bin\Debug\netcoreapp3.1\shoes_shop.pdb
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.csproj.AssemblyReference.cache
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.AssemblyInfoInputs.cache
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.AssemblyInfo.cs
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.csproj.CoreCompileInputs.cache
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.dll
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.pdb
+C:\Users\Ica\source\repos\shoes_shop\shoes_shop\obj\Debug\netcoreapp3.1\shoes_shop.genruntimeconfig.cache
