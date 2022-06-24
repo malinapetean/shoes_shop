@@ -14,7 +14,15 @@ C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.Generated
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.AssemblyInfoInputs.cache
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.AssemblyInfo.cs
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.csproj.CoreCompileInputs.cache
-C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.csproj.CopyComplete
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.dll
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.pdb
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.genruntimeconfig.cache
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.deps.json
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.runtimeconfig.json
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.runtimeconfig.dev.json
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.exe
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.dll
+C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.pdb
+C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmMkCard.resources
+C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmAddShoes.resources
+C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmSortShoes.resources
