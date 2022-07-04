@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace view
 {
-    public partial class FrmAddShoes : Form
+    public partial class FrmMkUpdate : Form
     {
-        public FrmAddShoes()
+        public FrmMkUpdate()
         {
             InitializeComponent();
+        }
+
+        private void labelAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

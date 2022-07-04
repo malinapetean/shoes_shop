@@ -26,3 +26,5 @@ C:\Users\Ica\source\repos\shoes_shop\view\bin\Debug\netcoreapp3.1\shoes_shop.pdb
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmMkCard.resources
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmAddShoes.resources
 C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmSortShoes.resources
+C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmHome.resources
+C:\Users\Ica\source\repos\shoes_shop\view\obj\Debug\netcoreapp3.1\view.FrmMkUpdate.resources

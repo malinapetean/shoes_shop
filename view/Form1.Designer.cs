@@ -29,11 +29,6 @@ namespace view
         /// </summary>
         private void InitializeComponent()
         {
-            this.PnlMain = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PnlHeader = new System.Windows.Forms.Panel();
             this.labelNameShop = new System.Windows.Forms.Label();
             this.PnlAsside = new System.Windows.Forms.Panel();
@@ -44,59 +39,14 @@ namespace view
             this.btnSort = new FontAwesome.Sharp.IconButton();
             this.PnlLogo = new System.Windows.Forms.Panel();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
-            this.PnlMain.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+           
+     
             this.PnlHeader.SuspendLayout();
             this.PnlAsside.SuspendLayout();
             this.PnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
+            
             this.SuspendLayout();
-            // 
-            // PnlMain
-            // 
-            this.PnlMain.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.PnlMain.Controls.Add(this.panel1);
-            this.PnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlMain.Location = new System.Drawing.Point(200, 80);
-            this.PnlMain.Name = "PnlMain";
-            this.PnlMain.Size = new System.Drawing.Size(773, 490);
-            this.PnlMain.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(16, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 213);
-            this.panel1.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(51, 165);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Brand";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 119);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // PnlHeader
             // 
@@ -278,27 +228,21 @@ namespace view
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 570);
-            this.Controls.Add(this.PnlMain);
             this.Controls.Add(this.PnlHeader);
             this.Controls.Add(this.PnlAsside);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.PnlMain.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PnlHeader.ResumeLayout(false);
             this.PnlHeader.PerformLayout();
             this.PnlAsside.ResumeLayout(false);
             this.PnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
+            
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel PnlMain;
         private System.Windows.Forms.Panel PnlHeader;
         private System.Windows.Forms.Panel PnlAsside;
         private FontAwesome.Sharp.IconButton iconButton5;
@@ -309,10 +253,7 @@ namespace view
         private System.Windows.Forms.Panel PnlLogo;
         private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.Label labelNameShop;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        
     }
 }
 

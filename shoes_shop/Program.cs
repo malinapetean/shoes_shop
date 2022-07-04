@@ -8,9 +8,11 @@ namespace shoes_shop
     {
         static void Main(string[] args)
         {
-            ControllerShoes shoe = new ControllerShoes();
-
-            shoe.display();
+            Shoes s = new Shoes(11, "Crock", "Slapi", 50, 120, "hahahha","shoe2");
+            ControllerShoes ctrl = new ControllerShoes();
+            ctrl.addShoes(s);
+            Console.WriteLine(ctrl.toSave());
+            ctrl.load();
         }
     }
 }

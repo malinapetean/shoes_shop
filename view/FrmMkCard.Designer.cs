@@ -43,14 +43,14 @@ namespace view
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(184, 53);
+            this.panel1.Location = new System.Drawing.Point(401, 134);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 213);
+            this.panel1.Size = new System.Drawing.Size(220, 215);
             this.panel1.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(51, 165);
+            this.textBox1.Location = new System.Drawing.Point(50, 170);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 2;
@@ -58,7 +58,7 @@ namespace view
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 142);
+            this.label1.Location = new System.Drawing.Point(85, 145);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace view
             // 
             this.pictureBox1.Location = new System.Drawing.Point(18, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(185, 120);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

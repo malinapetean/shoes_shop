@@ -4,7 +4,10 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmAddShoes.cs">
+    <Compile Update="FrmMkAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmMkCard.cs">
@@ -13,13 +16,28 @@
     <Compile Update="FrmMkLayout.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmMkUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmSortShoes.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PnlAdd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="PnlAsside.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="PnlHeader.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Update="PnlMain.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="PnlShoes.cs">
+    <Compile Update="PnlShoeCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="PnlUpdate.cs">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿
 namespace view
 {
-    partial class FrmAddShoes
+    partial class FrmHome
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace view
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FrmHome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FrmAddShoes";
+            this.ClientSize = new System.Drawing.Size(1038, 628);
+            this.Name = "FrmHome";
+            this.Text = "FrmHome";
+            this.Load += new System.EventHandler(this.FrmHome_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

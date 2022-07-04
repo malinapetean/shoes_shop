@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using shoes_shop.controller;
 using shoes_shop.model;
 
 namespace view
@@ -18,12 +19,12 @@ namespace view
         ///Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
-        private Form currebtchildForm;
-        private List<Shoes> shoes;
-        private List<PnlShoes> pnlShoes;
-        public Form1(List<Shoes> shoes)
+        ///private Form currebtchildForm;
+        private ControllerShoes shoes;
+        public Form1()
         {
             InitializeComponent();
+            this.shoes = new ControllerShoes();     
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(10, 45);
             PnlAsside.Controls.Add(leftBorderBtn);
@@ -32,33 +33,11 @@ namespace view
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            this.pnlShoes = new List<PnlShoes>();
-            this.shoes = shoes;
-            createCards();
-        }
-        public void createCards()
-        {
-            int x = 0, y = 0, ct = 0;
-            foreach(Shoes s in shoes)
-            {
-                ct++;
-                PnlShoes pnlsh = new PnlShoes(s, this);
-                pnlsh.Location = new Point(x, y);
-                this.Controls.Add(pnlsh);
-                this.pnlShoes.Add(pnlsh);
 
-                x += 240;
-                if(ct%3==0)
-                {
-                    x = 10;
-                    y += 230;
-                }
-                if(y>this.Height)
-                {
-                    this.AutoScroll = true;
-                }
-            }
+           
+           
         }
+        
         private struct RgbColors
         {
             public static Color color3 = Color.FromArgb(255, 153, 204);
@@ -101,33 +80,33 @@ namespace view
             }
         }
 
-        private void OpenChildForm(Form childform)
-        {
-            if(currebtchildForm!= null)
-            {
-                currebtchildForm.Close();
-            }
-            currebtchildForm = childform;
-            childform.TopLevel = false;
-            childform.FormBorderStyle = FormBorderStyle.None;
-            childform.Dock = DockStyle.Fill;
-            PnlMain.Controls.Add(childform);
-            PnlMain.Tag = childform;
-            childform.BringToFront();
-            childform.Show();
+        //private void OpenChildForm(Form childform)
+        //{
+        //    if (currebtchildForm != null)
+        //    {
+        //        currebtchildForm.Close();
+        //    }
+        //    currebtchildForm = childform;
+        //    childform.TopLevel = false;
+        //    childform.FormBorderStyle = FormBorderStyle.None;
+        //    childform.Dock = DockStyle.Fill;
+        //    PnlMain.Controls.Add(childform);
+        //    PnlMain.Tag = childform;
+        //    childform.BringToFront();
+        //    childform.Show();
 
-        }
+        //}
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RgbColors.color2);
-            OpenChildForm(new FrmAddShoes());
+            ///OpenChildForm(new FrmAddShoes());
         }
 
         private void btnSort_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RgbColors.color1);
-            OpenChildForm(new FrmSortShoes());
+            ///OpenChildForm(new FrmSortShoes());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -148,7 +127,7 @@ namespace view
 
         private void pictureLogo_Click(object sender, EventArgs e)
         {
-            currebtchildForm.Close();
+            ///currebtchildForm.Close();
             Reset();
         }
         private void Reset()
@@ -156,7 +135,7 @@ namespace view
             DisabledButton();
             leftBorderBtn.Visible = false;
         }
-        ///Drag Form
+        //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]

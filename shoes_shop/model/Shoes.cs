@@ -12,6 +12,7 @@ namespace shoes_shop.model
         private int size;
         private int price;
         private string description = "";
+        private string picture = "";
 
         public Shoes (string text)
         {
@@ -21,9 +22,10 @@ namespace shoes_shop.model
             this.size= int.Parse(text.Split(",")[3]);
             this.price = int.Parse(text.Split(",")[4]);
             this.description = text.Split(",")[5];
+            this.picture = text.Split(",")[6];
 
         }
-        public Shoes(int id, string type,string brand, int size, int price,string description)
+        public Shoes(int id, string type,string brand, int size, int price,string description,string picture)
         {
             this.id = id;
             this.type = type;
@@ -31,6 +33,7 @@ namespace shoes_shop.model
             this.size =size;
             this.price = price;
             this.description =description;
+            this.picture = picture;
         }
 
         public int Id
@@ -63,6 +66,11 @@ namespace shoes_shop.model
             get => this.description;
             set => this.description = value;
         }
+        public string Picture
+        {
+            get => this.picture;
+            set => this.picture = value;
+        }
         public string display()
         {
             string text = "";
@@ -72,7 +80,15 @@ namespace shoes_shop.model
             text += "The size is: " + this.size + "\n";
             text += "The price is: " + this.price + "\n";
             text += "The description is: " + this.description + "\n";
+            text += "The picture is: " + this.picture + "\n";
             return text;
+        }
+
+        public String tosave()
+        {
+            String txt = "";
+            txt += this.id + "," + this.type + "," + this.brand + "," + this.size + "," + this.price + "," + this.description+","+this.picture;
+            return txt;
         }
         public Shoes()
         {
