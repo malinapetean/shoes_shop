@@ -14,6 +14,7 @@ namespace view
 
         private IconButton btnAdd;
         private IconButton btnSort;
+        private IconButton btnSort2;
         private ControllerShoes control;
 
         private PictureBox pictureLogo;
@@ -23,14 +24,12 @@ namespace view
 
         private FrmHome form;
 
-        public PnlAsside(IconButton sort,IconButton add,FrmHome form)
+        public PnlAsside(IconButton sortByBrand, IconButton sortByPrice,IconButton add, FrmHome form)
         {
             this.Location = new Point(0, 0);
             this.Name = "PnlAsside";
             this.Size = new Size(200, 570);
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnSort);
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(10, 45);
             this.Controls.Add(leftBorderBtn);
@@ -66,7 +65,7 @@ namespace view
             this.pnlLogo.SuspendLayout();
 
             btnAdd = add;
-            this.btnAdd.Location = new System.Drawing.Point(0, 195);
+            this.btnAdd.Location = new System.Drawing.Point(0, 240);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(200, 45);
             this.btnAdd.TabIndex = 2;
@@ -87,7 +86,7 @@ namespace view
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Controls.Add(this.btnAdd);
 
-            btnSort = sort;
+            btnSort = sortByBrand;
             btnSort.FlatAppearance.BorderSize = 0;
             btnSort.FlatStyle = FlatStyle.Flat;
             btnSort.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -101,15 +100,35 @@ namespace view
             btnSort.Name = "btnSort";
             btnSort.Size = new Size(200, 45);
             btnSort.TabIndex = 1;
-            btnSort.Text = "Sort shoes";
+            btnSort.Text = "Sort by brand";
             btnSort.TextAlign = ContentAlignment.MiddleLeft;
             btnSort.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSort.UseVisualStyleBackColor = false;
             btnSort.Click += new EventHandler(this.btnSort_Click);
             btnSort.BackColor =Color.LightBlue;
-            Controls.Add(this.btnSort);
-            
+            this.Controls.Add(this.btnSort);
 
+            btnSort2 = sortByPrice;
+            btnSort2.FlatAppearance.BorderSize = 0;
+            btnSort2.FlatStyle = FlatStyle.Flat;
+            btnSort2.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnSort2.ForeColor = Color.Black;
+            btnSort2.IconChar = IconChar.SortNumericDown;
+            btnSort2.IconColor = SystemColors.ActiveCaptionText;
+            btnSort2.IconFont = IconFont.Auto;
+            btnSort2.IconSize = 35;
+            btnSort2.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSort2.Location = new Point(0, 195);
+            btnSort2.Name = "btnSort2";
+            btnSort2.Size = new Size(200, 45);
+            btnSort2.TabIndex = 1;
+            btnSort2.Text = "Sort by price";
+            btnSort2.TextAlign = ContentAlignment.MiddleLeft;
+            btnSort2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSort2.UseVisualStyleBackColor = false;
+            btnSort2.Click += new EventHandler(this.btnSort2_Click);
+            btnSort2.BackColor = Color.LightBlue;
+            this.Controls.Add(this.btnSort2);
         }
 
 
@@ -163,6 +182,11 @@ namespace view
         {
             ActiveButton(sender, RgbColors.color1);
             
+        }
+        private void btnSort2_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RgbColors.color3);
+
         }
         private void pictureLogo_Click(object sender, EventArgs e)
         {

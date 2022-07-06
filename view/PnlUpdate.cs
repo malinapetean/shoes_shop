@@ -198,7 +198,7 @@ namespace view
 
             }
             else
-                MessageBox.Show("Completeaza toate campurile!");
+                MessageBox.Show(checkErrors());
         }
         private void cancel_Click(object sender, EventArgs e)
         {
@@ -229,6 +229,21 @@ namespace view
                 MessageBox.Show("valoare invalida");
 
             }
+        }
+        private String checkErrors()
+        {
+            String text = "";
+            if (txtBrand.Text.Equals(""))
+                text += "Add brand! ";
+            if (txtType.Text.Equals(""))
+                text += "Add type! ";
+            if (txtSize.Text.Equals(""))
+                text += "Add size! ";
+            if (txtPrice.Text.Equals(""))
+                text += "Add price! ";
+            if (txtDescription.Text.Equals(""))
+                text += "Add description! ";
+            return text;
         }
     }
 }

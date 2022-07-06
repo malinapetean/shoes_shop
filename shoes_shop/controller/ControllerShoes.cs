@@ -46,7 +46,7 @@ namespace shoes_shop.controller
             int nr = shoes.Count;
             return shoes[nr - 1].Id + 1;
         }
-        public List<Shoes> sortShoes()
+        public List<Shoes> sortShoesbyBrand()
         {
             List<Shoes> alphabet = shoes;
             int sch = 0;
@@ -65,6 +65,26 @@ namespace shoes_shop.controller
                 }
             }
             return alphabet;
+        }
+        public List<Shoes> sortShoesByPrice()
+        {
+            List<Shoes> price = shoes;
+            int sch = 0;
+            while (sch == 0)
+            {
+                sch = 1;
+                for (int i = 0; i < price.Count - 1; i++)
+                {
+                    if (price[i].Price.CompareTo(price[i + 1].Price) > 0)
+                    {
+                        Shoes b = price[i];
+                        price[i] = price[i + 1];
+                        price[i + 1] = b;
+                        sch = 0;
+                    }
+                }
+            }
+            return price;
         }
 
         public bool existence(Shoes s)

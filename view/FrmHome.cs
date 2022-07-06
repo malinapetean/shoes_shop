@@ -16,6 +16,7 @@ namespace view
        
         private ControllerShoes shoes;
         private IconButton btnsort;
+        private IconButton btnsort2;
         private IconButton btnadd;
         public FrmHome()
         {
@@ -25,6 +26,8 @@ namespace view
             this.btnadd.Click += new EventHandler(addShoes_Click);
             this.btnsort = new IconButton();
             this.btnsort.Click += new EventHandler(sort_Click);
+            this.btnsort2 = new IconButton();
+            this.btnsort2.Click += new EventHandler(sort2_Click);
             ///Delete Form bar
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -32,7 +35,7 @@ namespace view
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
             this.Controls.Add(new PnlMain(shoes.find(),this));
-            this.Controls.Add(new PnlAsside(btnsort,btnadd,this));
+            this.Controls.Add(new PnlAsside(btnsort, btnsort2,btnadd,this));
             this.Controls.Add(new PnlHeader());
             this.SuspendLayout();
             this.ResumeLayout(false);
@@ -47,10 +50,19 @@ namespace view
         {
             erasePanel("PnlMain");
             shoes.load();
-            List<Shoes> sortedBook = shoes.sortShoes();
-            this.Controls.Add(new PnlMain(sortedBook,this));
+            List<Shoes> sortedshoes = shoes.sortShoesbyBrand();
+            this.Controls.Add(new PnlMain(sortedshoes,this));
 
         }
+        private void sort2_Click(object sender, EventArgs e)
+        {
+            erasePanel("PnlMain");
+            shoes.load();
+            List<Shoes> sortedshoes = shoes.sortShoesByPrice();
+            this.Controls.Add(new PnlMain(sortedshoes, this));
+
+        }
+
         private void addShoes_Click(object sender, EventArgs e)
         {
             erasePanel("PnlMain");
@@ -58,6 +70,7 @@ namespace view
         }
 
         public void erasePanel(String name)
+
         {
 
             Control cautat = null;
