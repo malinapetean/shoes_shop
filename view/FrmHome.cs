@@ -18,16 +18,36 @@ namespace view
         private IconButton btnsort;
         private IconButton btnsort2;
         private IconButton btnadd;
+        private IconButton btnType;
+        private IconButton btnBrand;
+        private IconButton btnSize;
+        private IconButton btnOriginalList;
         public FrmHome()
         {
             InitializeComponent();
             this.shoes = new ControllerShoes();
+
             this.btnadd = new IconButton();
             this.btnadd.Click += new EventHandler(addShoes_Click);
+
             this.btnsort = new IconButton();
             this.btnsort.Click += new EventHandler(sort_Click);
+
             this.btnsort2 = new IconButton();
             this.btnsort2.Click += new EventHandler(sort2_Click);
+
+            this.btnType = new IconButton();
+            this.btnType.Click += new EventHandler(type_Click);
+
+            this.btnBrand = new IconButton();
+            this.btnBrand.Click += new EventHandler(brand_Click);
+
+             this.btnSize = new IconButton();
+            this.btnSize.Click += new EventHandler(size_Click);
+
+            this.btnOriginalList = new IconButton();
+            this.btnOriginalList.Click += new EventHandler(originalList_Click);
+
             ///Delete Form bar
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -35,7 +55,7 @@ namespace view
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
             this.Controls.Add(new PnlMain(shoes.find(),this));
-            this.Controls.Add(new PnlAsside(btnsort, btnsort2,btnadd,this));
+            this.Controls.Add(new PnlAsside(btnsort, btnsort2,btnadd,btnType,btnBrand,btnSize,btnOriginalList, this));
             this.Controls.Add(new PnlHeader());
             this.SuspendLayout();
             this.ResumeLayout(false);
@@ -67,6 +87,38 @@ namespace view
         {
             erasePanel("PnlMain");
             this.Controls.Add(new PnlAdd(this));
+        }
+        private void type_Click(object sender, EventArgs e)
+        {
+            erasePanel("PnlMain");
+            shoes.load();
+            List<Shoes> shoesType = shoes.listshoesType("Slapi");
+            this.Controls.Add(new PnlMain(shoesType, this));
+
+        }
+        private void brand_Click(object sender, EventArgs e)
+        {
+            erasePanel("PnlMain");
+            shoes.load();
+            List<Shoes> shoesBrand = shoes.listshoesBrand("Adidas");
+            this.Controls.Add(new PnlMain(shoesBrand, this));
+
+        }
+        private void size_Click(object sender, EventArgs e)
+        {
+            erasePanel("PnlMain");
+            shoes.load();
+            List<Shoes> shoesSize = shoes.listshoesSize(42);
+            this.Controls.Add(new PnlMain(shoesSize, this));
+
+        }
+
+        private void originalList_Click(object sender, EventArgs e)
+        {
+            erasePanel("PnlMain");
+            shoes.load();
+            this.Controls.Add(new PnlMain(shoes.find(), this));
+
         }
 
         public void erasePanel(String name)

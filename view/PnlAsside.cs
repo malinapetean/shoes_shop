@@ -15,6 +15,10 @@ namespace view
         private IconButton btnAdd;
         private IconButton btnSort;
         private IconButton btnSort2;
+        private IconButton btnType;
+        private IconButton btnBrand;
+        private IconButton btnSize;
+        private IconButton btnOriginalList;
         private ControllerShoes control;
 
         private PictureBox pictureLogo;
@@ -24,7 +28,7 @@ namespace view
 
         private FrmHome form;
 
-        public PnlAsside(IconButton sortByBrand, IconButton sortByPrice,IconButton add, FrmHome form)
+        public PnlAsside(IconButton sortByBrand, IconButton sortByPrice,IconButton add, IconButton type,IconButton brand, IconButton size, IconButton mainList, FrmHome form)
         {
             this.Location = new Point(0, 0);
             this.Name = "PnlAsside";
@@ -126,9 +130,97 @@ namespace view
             btnSort2.TextAlign = ContentAlignment.MiddleLeft;
             btnSort2.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSort2.UseVisualStyleBackColor = false;
-            btnSort2.Click += new EventHandler(this.btnSort2_Click);
+            btnSort2.Click += new EventHandler(this.btnType_Click);
             btnSort2.BackColor = Color.LightBlue;
             this.Controls.Add(this.btnSort2);
+
+            btnType = type;
+            btnType.FlatAppearance.BorderSize = 0;
+            btnType.FlatStyle = FlatStyle.Flat;
+            btnType.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnType.ForeColor = Color.Black;
+            btnType.IconChar = IconChar.ShoePrints;
+            btnType.IconColor = SystemColors.ActiveCaptionText;
+            btnType.IconFont = IconFont.Auto;
+            btnType.IconSize = 35;
+            btnType.ImageAlign = ContentAlignment.MiddleLeft;
+            btnType.Location = new Point(0,285);
+            btnType.Name = "btntypeSlapi";
+            btnType.Size = new Size(200, 45);
+            btnType.TabIndex = 1;
+            btnType.Text = "Slapi";
+            btnType.TextAlign = ContentAlignment.MiddleLeft;
+            btnType.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnType.UseVisualStyleBackColor = false;
+            btnType.Click += new EventHandler(this.btnType_Click);
+            btnType.BackColor = Color.LightBlue;
+            this.Controls.Add(this.btnType);
+
+            btnBrand = brand;
+            btnBrand.FlatAppearance.BorderSize = 0;
+            btnBrand.FlatStyle = FlatStyle.Flat;
+            btnBrand.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnBrand.ForeColor = Color.Black;
+            btnBrand.IconChar = IconChar.Running;
+            btnBrand.IconColor = SystemColors.ActiveCaptionText;
+            btnBrand.IconFont = IconFont.Auto;
+            btnBrand.IconSize = 35;
+            btnBrand.ImageAlign = ContentAlignment.MiddleLeft;
+            btnBrand.Location = new Point(0, 330);
+            btnBrand.Name = "btnbrand";
+            btnBrand.Size = new Size(200, 45);
+            btnBrand.TabIndex = 1;
+            btnBrand.Text = "Adidas shoes";
+            btnBrand.TextAlign = ContentAlignment.MiddleLeft;
+            btnBrand.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnBrand.UseVisualStyleBackColor = false;
+            btnBrand.Click += new EventHandler(this.btnBrand_Click);
+            btnBrand.BackColor = Color.LightBlue;
+            this.Controls.Add(this.btnBrand);
+
+            btnSize = size;
+            btnSize.FlatAppearance.BorderSize = 0;
+            btnSize.FlatStyle = FlatStyle.Flat;
+            btnSize.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnSize.ForeColor = Color.Black;
+            btnSize.IconChar = IconChar.Ruler;
+            btnSize.IconColor = SystemColors.ActiveCaptionText;
+            btnSize.IconFont = IconFont.Auto;
+            btnSize.IconSize = 35;
+            btnSize.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSize.Location = new Point(0, 375);
+            btnSize.Name = "btnsize";
+            btnSize.Size = new Size(200, 45);
+            btnSize.TabIndex = 1;
+            btnSize.Text = "Show size 42";
+            btnSize.TextAlign = ContentAlignment.MiddleLeft;
+            btnSize.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSize.UseVisualStyleBackColor = false;
+            btnSize.Click += new EventHandler(this.btnSize_Click);
+            btnSize.BackColor = Color.LightBlue;
+            this.Controls.Add(this.btnSize);
+
+            btnOriginalList = mainList;
+            btnOriginalList.FlatAppearance.BorderSize = 0;
+            btnOriginalList.FlatStyle = FlatStyle.Flat;
+            btnOriginalList.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnOriginalList.ForeColor = Color.Black;
+            btnOriginalList.IconChar = IconChar.List;
+            btnOriginalList.IconColor = SystemColors.ActiveCaptionText;
+            btnOriginalList.IconFont = IconFont.Auto;
+            btnOriginalList.IconSize = 35;
+            btnOriginalList.ImageAlign = ContentAlignment.MiddleLeft;
+            btnOriginalList.Location = new Point(0, 420);
+            btnOriginalList.Name = "btnList";
+            btnOriginalList.Size = new Size(200, 45);
+            btnOriginalList.TabIndex = 1;
+            btnOriginalList.Text = "Original list";
+            btnOriginalList.TextAlign = ContentAlignment.MiddleLeft;
+            btnOriginalList.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnOriginalList.UseVisualStyleBackColor = false;
+            btnOriginalList.Click += new EventHandler(this.btnOriginalList_Click);
+            btnOriginalList.BackColor = Color.LightBlue;
+            this.Controls.Add(this.btnOriginalList);
         }
 
 
@@ -188,6 +280,28 @@ namespace view
             ActiveButton(sender, RgbColors.color3);
 
         }
+        private void btnType_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RgbColors.color4);
+
+        }
+        private void btnBrand_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RgbColors.color5);
+
+        }
+        private void btnSize_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RgbColors.color1);
+
+        }
+
+        private void btnOriginalList_Click(object sender, EventArgs e)
+        {
+            ActiveButton(sender, RgbColors.color2);
+
+        }
+
         private void pictureLogo_Click(object sender, EventArgs e)
         {
             ///currebtchildForm.Close();

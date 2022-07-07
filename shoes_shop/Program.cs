@@ -1,6 +1,7 @@
 ﻿using shoes_shop.controller;
 using shoes_shop.model;
 using System;
+using System.Collections.Generic;
 
 namespace shoes_shop
 {
@@ -8,11 +9,17 @@ namespace shoes_shop
     {
         static void Main(string[] args)
         {
-            Shoes s = new Shoes(11, "Crock", "Slapi", 50, 120, "hahahha","shoe2");
+            //Shoes s = new Shoes(11, "Crock", "Slapi", 50, 120, "hahahha","shoe2");
             ControllerShoes ctrl = new ControllerShoes();
-            ctrl.addShoes(s);
-            Console.WriteLine(ctrl.toSave());
-            ctrl.load();
+            //ctrl.addShoes(s);
+            //Console.WriteLine(ctrl.toSave());
+            //ctrl.load();
+
+            foreach (Shoes s in ctrl.listshoesType("Pantofi Sport"))
+            {
+                Console.WriteLine(s.display());
+            }
+            
         }
     }
 }

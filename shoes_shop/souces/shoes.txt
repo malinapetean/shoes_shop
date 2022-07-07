@@ -1,10 +1,10 @@
-1,Pantofi Sport,Nike,43,600,fits any outfit,shoe1
+1,Pantofi Sport,Nike,42,600,fits any outfit,shoe1
 2,Slapi,Yeezy,40,800,comfortable,shoe2
 3,Pantofi Sport,Jordan,44,1800,perfect for all seasons,shoe3
 4,Pantofi cu Toc,Le Silla,38,2450, for formal outfits,shoe4
 5,Slapi,Adidas,45,250,for hot days,shoe5
 6,Pantofi Sport,Adidas,36,400,running shoes,shoe1
-7,Sandale,Lauren Ralph,37,760, perfect for summer,shoe1
-8,Pantofi Sport,Vans,42,50,both for skateboarding and for the mall,shoe1
-9,Sneakers,Yeezy,41,1550,very comfortable,shoe1
-10,Pantofi cu Toc,Zanotti,39,1720,dece,shoe10
+7,Sandale,Lauren Ralph,37,760, perfect for summer,shoe7
+8,Pantofi Sport,Vans,42,50,both for skateboarding and for the mall,shoe8
+9,Sneakers,Yeezy,41,1550,very comfortable,shoe9
+10,Pantofi cu Toc,Zanotti,42,1720,dece,shoe10

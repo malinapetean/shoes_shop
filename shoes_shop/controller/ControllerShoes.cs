@@ -86,6 +86,48 @@ namespace shoes_shop.controller
             }
             return price;
         }
+        public List<Shoes> listshoesType(string type)
+        {
+            List<Shoes> list = new List<Shoes>();
+            int ct =shoes.Count;
+
+            for(int p = ct - 1 ; p >= 0; p--)
+                if (shoes[p].Type.Equals(type))
+                {
+                    //for (int i = p; i < ct - 1; i++)
+                    //    shoes[i] = shoes[i + 1];
+                    //ct--;
+                    list.Add(shoes[p]);
+                }
+            return list;
+
+        }
+        public List<Shoes> listshoesBrand(string brand)
+        {
+            List<Shoes> list = new List<Shoes>();
+            int ct = shoes.Count;
+
+            for (int p =0; p <ct; p++)
+                if (shoes[p].Brand.Equals(brand))
+                {
+                    list.Add(shoes[p]);
+                }
+            return list;
+
+        }
+        public List<Shoes> listshoesSize(int size)
+        {
+            List<Shoes> list = new List<Shoes>();
+            int ct = shoes.Count;
+
+            for (int p =0; p <ct; p++)
+                if (shoes[p].Size.Equals(size))
+                {
+                    list.Add(shoes[p]);
+                }
+            return list;
+
+        }
 
         public bool existence(Shoes s)
         {
