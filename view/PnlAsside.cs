@@ -19,6 +19,8 @@ namespace view
         private IconButton btnBrand;
         private IconButton btnSize;
         private IconButton btnOriginalList;
+        private ComboBox comboboxType;
+        private ComboBox comboboxBrand;
         private ControllerShoes control;
 
         private PictureBox pictureLogo;
@@ -28,7 +30,7 @@ namespace view
 
         private FrmHome form;
 
-        public PnlAsside(IconButton sortByBrand, IconButton sortByPrice,IconButton add, IconButton type,IconButton brand, IconButton size, IconButton mainList, FrmHome form)
+        public PnlAsside(IconButton sortByBrand, IconButton sortByPrice,IconButton add, IconButton type,IconButton brand, IconButton size, IconButton mainList,ComboBox boxType, ComboBox boxBrand, FrmHome form)
         {
             this.Location = new Point(0, 0);
             this.Name = "PnlAsside";
@@ -51,11 +53,11 @@ namespace view
             pictureLogo = new PictureBox();
             this.pictureLogo.BackColor = System.Drawing.Color.LightBlue;
             this.pictureLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureLogo.Image = global::view.Properties.Resources.shoes_clipart_clipart_images_clipartwork_15;
             this.pictureLogo.Location = new System.Drawing.Point(0, 0);
             this.pictureLogo.Name = "pictureLogo";
             this.pictureLogo.Size = new System.Drawing.Size(200, 150);
             this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureLogo.Image = Image.FromFile(Application.StartupPath + @"/imagini/" + "shoesLogo.png");
             this.pictureLogo.TabIndex = 0;
             this.pictureLogo.TabStop = false;
             this.pictureLogo.Click += new System.EventHandler(this.pictureLogo_Click);
@@ -221,6 +223,33 @@ namespace view
             btnOriginalList.Click += new EventHandler(this.btnOriginalList_Click);
             btnOriginalList.BackColor = Color.LightBlue;
             this.Controls.Add(this.btnOriginalList);
+
+            comboboxType = boxType;
+            comboboxType.Location = new Point(0, 466);
+            comboboxType.Size = new Size(200, 30);
+            comboboxType.Name = "comboboxType";
+            comboboxType.FlatStyle = FlatStyle.Flat;
+            comboboxType.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboboxType.ForeColor = Color.Black;
+            comboboxType.BackColor = Color.SteelBlue;
+            comboboxType.Text = "Types";
+            comboboxType.Sorted = true;
+            this.Controls.Add(this.comboboxType);
+
+            comboboxBrand = boxBrand;
+            comboboxBrand.Location = new Point(0, 496);
+            comboboxBrand.Size = new Size(200, 30);
+            comboboxBrand.Name = "comboboxBrand";
+            comboboxBrand.FlatStyle = FlatStyle.Flat;
+            comboboxBrand.Font = new Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboboxBrand.ForeColor = Color.Black;
+            comboboxBrand.BackColor = Color.SteelBlue;
+            comboboxBrand.Text = "Brands";
+            comboboxBrand.Sorted = true;
+            this.Controls.Add(this.comboboxBrand);
+
+            this.populateTypes();
+            this.populateBrands();
         }
 
 
@@ -301,6 +330,7 @@ namespace view
             ActiveButton(sender, RgbColors.color2);
 
         }
+        
 
         private void pictureLogo_Click(object sender, EventArgs e)
         {
@@ -312,7 +342,33 @@ namespace view
             DisabledButton();
             leftBorderBtn.Visible = false;
         }
-        
+
+
+
+        private void populateTypes()
+        {
+            List<String> types = this.control.listOfTypes();
+
+
+            foreach(String type in types)
+            {
+
+                this.comboboxType.Items.Add(type);
+            }
+
+
+        }
+        private void populateBrands()
+        {
+            List<String> brand = this.control.listOfBrands();
+
+
+            foreach (String br in brand)
+            {
+
+                this.comboboxBrand.Items.Add(br);
+            }
+        }
 
     }
 }

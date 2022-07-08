@@ -16,6 +16,9 @@
     <Compile Update="FrmMkLayout.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmMkLayoutAgain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmMkUpdate.cs">
       <SubType>Form</SubType>
     </Compile>

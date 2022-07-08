@@ -128,7 +128,33 @@ namespace shoes_shop.controller
             return list;
 
         }
+        public List<String> listOfTypes()
+        {
+            List<String> list = new List<string>();
+            for(int i=0;i<shoes.Count;i++)
+            {
 
+                if (list.Contains(shoes[i].Type) == false)
+                {
+                    list.Add(shoes[i].Type);
+                }
+            }
+            return list;
+        }
+
+        public List<String> listOfBrands()
+        {
+            List<String> list = new List<string>();
+            for (int i = 0; i < shoes.Count; i++)
+            {
+
+                if (list.Contains(shoes[i].Brand) == false)
+                {
+                    list.Add(shoes[i].Brand);
+                }
+            }
+            return list;
+        }
         public bool existence(Shoes s)
         {
             for(int i=0;i<shoes.Count;i++)

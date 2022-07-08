@@ -15,9 +15,9 @@ namespace shoes_shop
             //Console.WriteLine(ctrl.toSave());
             //ctrl.load();
 
-            foreach (Shoes s in ctrl.listshoesType("Pantofi Sport"))
+            foreach (String s in ctrl.listOfTypes())
             {
-                Console.WriteLine(s.display());
+                Console.WriteLine(s.ToString());
             }
             
         }

@@ -45,13 +45,11 @@ namespace view
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.labelAdd = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Cancel);
             this.panel1.Controls.Add(this.textBox6);
@@ -207,21 +205,6 @@ namespace view
             this.labelAdd.TabIndex = 0;
             this.labelAdd.Text = "Add new shoes";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Pantofi Sport",
-            "Pantofi cu Toc",
-            "Slapi",
-            "Sandale",
-            "Sneakers"});
-            this.comboBox1.Location = new System.Drawing.Point(562, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 22;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // FrmAddShoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -255,6 +238,5 @@ namespace view
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

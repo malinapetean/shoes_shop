@@ -5,6 +5,6 @@
 5,Slapi,Adidas,45,250,for hot days,shoe5
 6,Pantofi Sport,Adidas,36,400,running shoes,shoe1
 7,Sandale,Lauren Ralph,37,760, perfect for summer,shoe7
-8,Pantofi Sport,Vans,42,50,both for skateboarding and for the mall,shoe8
+8,Pantofi Sport,CevaNou,42,50,both for skateboarding and for the mall,shoe8
 9,Sneakers,Yeezy,41,1550,very comfortable,shoe9
 10,Pantofi cu Toc,Zanotti,42,1720,dece,shoe10

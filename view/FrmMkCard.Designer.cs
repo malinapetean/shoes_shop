@@ -39,6 +39,7 @@ namespace view
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
@@ -50,19 +51,20 @@ namespace view
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 170);
+            this.textBox1.Location = new System.Drawing.Point(41, 166);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.Size = new System.Drawing.Size(134, 30);
             this.textBox1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 145);
+            this.label1.Location = new System.Drawing.Point(50, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
+            this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Brand";
+            this.label1.Text = "ddadaddadada";
             // 
             // pictureBox1
             // 

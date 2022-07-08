@@ -11,7 +11,6 @@ namespace view
     {
         private List<Shoes> shoes;
         private List<PnlShoeCard> pnlShoes;
-        private PnlUpdate updatepanel;
         private FrmHome form;
 
         public PnlMain(List<Shoes> shoes,FrmHome form)

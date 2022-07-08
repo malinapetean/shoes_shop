@@ -48,15 +48,15 @@ namespace view
             this.Controls.Add(brand);
 
             description = new TextBox();
-            description.Location = new Point(20, 170);
-            description.Height = 25;
+            description.Location = new Point(30, 170);
+            description.Height = 40;
             description.Width = 155;
             description.Multiline = true;
             description.Enabled = false;
             description.Text = shoe.Description;
             this.Controls.Add(description);
 
-            this.Click += new EventHandler(shoe_Click);
+            this.picture.Click += new EventHandler(shoe_Click);
         }
 
         private void shoe_Click(object sender, EventArgs e)
